@@ -1,6 +1,10 @@
+import sys
 import urllib3
 from bs4 import BeautifulSoup
 http = urllib3.PoolManager()
+
+#print console output to text file
+sys.stdout = open('output.txt', 'wt')
 
 overflow_urls = []
 s1 = "buffer overflow"
@@ -10,7 +14,6 @@ issue = 1
 not_found = "404 Not Found"
 
 while issue < 71:
-    print("issue # " + str(issue))
     # Get page data
     purl = f"http://phrack.org/issues/{issue}/1.html"
     page = http.request('GET', purl)
