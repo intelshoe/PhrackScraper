@@ -15,7 +15,7 @@ issue = 1
 
 while issue < 70:
     # search within issue's articles
-    for x in range(2, 16):
+    for x in range(2, 21):
         # Get page data
         purl = f"http://phrack.org/issues/{issue}/{x}.html"
         page = http.request('GET', purl)
