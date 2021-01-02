@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 http = urllib3.PoolManager()
 
 # print console output to text file
-sys.stdout = open('python2.txt', 'wt')
+sys.stdout = open('output.txt', 'wt')
 
 # will hold the resulting list of urls
 results = {}
