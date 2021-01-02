@@ -8,7 +8,7 @@ sys.stdout = open('output.txt', 'wt')
 
 # will hold the resulting list of urls
 results = {}
-# search term to use when searching
+# search term to use when searching, case sensitive
 s1 = "python"
 # starting with Phrack issue 1
 issue = 1
