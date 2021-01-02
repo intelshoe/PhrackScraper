@@ -6,8 +6,11 @@ http = urllib3.PoolManager()
 # print console output to text file
 sys.stdout = open('output.txt', 'wt')
 
+# will hold the resulting list of urls
 overflow_urls = []
+# search term to use when searching
 s1 = "buffer overflow"
+# starting with phrack issue 1
 issue = 1
 
 while issue < 70:
