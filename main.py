@@ -9,7 +9,6 @@ sys.stdout = open('output.txt', 'wt')
 overflow_urls = []
 s1 = "buffer overflow"
 issue = 1
-not_found = "404 Not Found"
 
 while issue < 70:
     # search within issue's articles
